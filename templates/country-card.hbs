@@ -1,0 +1,21 @@
+<div class="card">
+    <h1 class="card__name">{{name}}</h1>
+    <div class="card__content">
+        <div class="card__info">
+            <p class="card__text"><strong>Столица:</strong> {{capital}}</p>
+            <p class="card__text"><strong>Население:</strong> {{population}}</p>
+            <ul class="card__text"><strong>Языки:</strong>
+                {{#each languages}}
+                <li class="card__text-item">{{iso639_1}}</li>
+                <li class="card__text-item">{{iso639_2}}</li>
+                <li class="card__text-item">{{name}}</li>
+                <li class="card__text-item">{{nativeName}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="card__img">
+            <img src="{{flag}}" alt="флаг">
+        </div>
+    </div>
+
+</div>
